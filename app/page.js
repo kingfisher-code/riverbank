@@ -17,16 +17,18 @@ export default function Home() {
         </div>
         <div className="grid  gap-3 mt-6 justify-self-center ">
           <div className="justify-self-center content-center">
-            <label className="text-white/70 font-mono  -tracking-2 justify-self-center text-[13px] "></label>
             <span className="text-[12px] -tracking-2 md:text-sm font-lato font-mono text-white/50  ">
-              Enter your email to view this collection.
+              Enter your email to view this
             </span>
+            <label className="text-white/70 font-mono  -tracking-2 ml-2 justify-self-center text-[15px] ">
+              collection.
+            </label>
           </div>
 
           <input
-            className="bg-white text-gray-900 py-3 pl-2 font-mono border-2 border-blue-600  md:py-5"
+            className="bg-white text-gray-900 py-4 pr-10 pl-2 font-mono border-2 text-[15px] md:text-[16px] border-blue-600  md:py-5"
             type="email"
-            placeholder="Email Address"
+            placeholder="Email "
             required
           />
         </div>
