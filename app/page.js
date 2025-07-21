@@ -8,19 +8,17 @@ export default function Home() {
       "
       >
         <div className="items-center ">
-          <h3 className="text-white justify-self-center text-lg font-mono text-[15px] md:text-[19px] ">
+          <h3 className="text-white justify-self-center text-lg font-mono tracking-widest text-[15px] md:text-[19px] ">
             RIVERBANK CHURCH
           </h3>
           <h4 className="text-white/50 font-mono text-lg justify-self-center text-[13px] md:text-[16px]">
             Riverbank Church Media Unit...
           </h4>
         </div>
-        <div className="grid  gap-5 mt-10 justify-self-center ">
+        <div className="grid  gap-3 mt-6 justify-self-center ">
           <div className="justify-self-center content-center">
-            <label className="text-white/70 font-mono justify-self-center">
-              Guest Access.
-            </label>
-            <span className="text-[12px] md:text-sm font-lato font-mono text-white/50">
+            <label className="text-white/70 font-mono  -tracking-2 justify-self-center text-[13px] "></label>
+            <span className="text-[12px] -tracking-2 md:text-sm font-lato font-mono text-white/50  ">
               Enter your email to view this collection.
             </span>
           </div>
