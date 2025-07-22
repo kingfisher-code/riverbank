@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
 
-import Header from "./component/header.js";
-import Section from "./component/section";
+// import Header from "./component/page.js";
+
+import Link from "next/link.js";
 
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(false);
   const [inputValue, setInputValue] = useState("");
 
   const handleSubmit = (event) => {
@@ -52,25 +52,18 @@ export default function Home() {
             />
 
             <div>
-              <a href="#header">
+              <Link href="/component">
                 <button
                   className="items-center border ml-25  justify-self-center border-white text-white/90 font-mono px-9 py-3 cursor-pointer mt-7"
-                  onClick={toggleVisibility}
                   disabled={isButtonDisabled}
                 >
                   Enter
                 </button>
-              </a>
+              </Link>
             </div>
           </form>
         </div>
       </div>
-      {isVisible && (
-        <div className="">
-          <Header />
-          <Section />
-        </div>
-      )}
     </div>
   );
 }

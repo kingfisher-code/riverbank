@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+
 import { GrFavorite } from "react-icons/gr";
 import { BsThreeDotsVertical } from "react-icons/bs";
 const Section = () => {
