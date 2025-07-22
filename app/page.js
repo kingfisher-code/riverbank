@@ -1,8 +1,25 @@
 "use client";
+import { useState } from "react";
+
+import Header from "./component/header.js";
+import Section from "./component/section";
 
 export default function Home() {
+  const [isVisible, setIsVisible] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setInputValue("");
+  };
+
+  const isButtonDisabled = inputValue.trim() === "";
+
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
   return (
-    <div className="w-full items-center h-screen bg-[url('/favy.jpg')] bg-center bg-cover md:bg-cover ">
+    <div className="w-full items-center h-screen bg-[url('/favy4.jpg')] bg-center bg-cover md:bg-cover ">
       <div
         className=" w-full h-screen bg-black/84 backdrop-blur-[0px]  justify-items-center content-center px-3
       "
@@ -24,23 +41,36 @@ export default function Home() {
               collection.
             </label>
           </div>
+          <form onSubmit={handleSubmit}>
+            <input
+              className="bg-white justify-self-center text-gray-900 py-4 pr-30 pl-2 font-mono border-2 text-[15px] md:text-[16px] border-blue-600  md:py-5"
+              type="email"
+              value={inputValue}
+              placeholder="Email "
+              onChange={(event) => setInputValue(event.target.value)}
+              required
+            />
 
-          <input
-            className="bg-white text-gray-900 py-4 pr-10 pl-2 font-mono border-2 text-[15px] md:text-[16px] border-blue-600  md:py-5"
-            type="email"
-            placeholder="Email "
-            required
-          />
-        </div>
-        <div>
-          <button
-            href="#header"
-            className="items-center border justify-self-center border-white text-white/90 font-mono px-9 py-3 cursor-pointer mt-7"
-          >
-            Enter
-          </button>
+            <div>
+              <a href="#header">
+                <button
+                  className="items-center border ml-25  justify-self-center border-white text-white/90 font-mono px-9 py-3 cursor-pointer mt-7"
+                  onClick={toggleVisibility}
+                  disabled={isButtonDisabled}
+                >
+                  Enter
+                </button>
+              </a>
+            </div>
+          </form>
         </div>
       </div>
+      {isVisible && (
+        <div className="">
+          <Header />
+          <Section />
+        </div>
+      )}
     </div>
   );
 }
