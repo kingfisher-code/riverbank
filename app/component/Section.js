@@ -25,16 +25,52 @@ const Section = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 pt-5  md:grid-cols-4 gap-2 ">
-        <Image src="/favy.jpg" alt="" height={350} width={350} />
+        <Image
+          src="/favy.jpg"
+          alt=""
+          height={350}
+          width={350}
+          className="object-cover rounded-lg"
+        />
 
-        <Image src="/favy3.jpg" alt="" height={350} width={350} />
-        <Image src="/favy4.jpg" alt="" height={350} width={350} />
+        <Image
+          src="/favy3.jpg"
+          alt=""
+          height={350}
+          width={350}
+          className="object-cover rounded-lg"
+        />
+        <Image
+          src="/favy4.jpg"
+          alt=""
+          height={350}
+          width={350}
+          className="object-cover rounded-lg"
+        />
 
-        <Image src="/favy6.jpg" alt="" height={350} width={350} />
+        <Image
+          src="/favy6.jpg"
+          alt=""
+          height={350}
+          width={350}
+          className="object-cover rounded-lg"
+        />
 
-        <Image src="/favy8.jpg" alt="" height={350} width={350} />
+        <Image
+          src="/favy8.jpg"
+          alt=""
+          height={350}
+          width={350}
+          className="object-cover rounded-lg"
+        />
 
-        <Image src="/favy10.jpg" alt="" height={350} width={350} />
+        <Image
+          src="/favy10.jpg"
+          alt=""
+          height={350}
+          width={350}
+          className="object-cover rounded-lg"
+        />
       </div>
     </div>
   );
