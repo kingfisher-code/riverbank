@@ -3,7 +3,7 @@
 import React from "react";
 
 import { GoArrowDown } from "react-icons/go";
-import Section from "./section.js";
+import Section from "./path";
 
 const Header = () => {
   return (
