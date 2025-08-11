@@ -1,6 +1,7 @@
 {
   "name": "church-gallery",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -9,9 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.4.2",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "next": "^15.4.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "react-icon": "^1.0.0",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.7.0"
@@ -22,5 +23,19 @@
     "eslint": "^9",
     "eslint-config-next": "15.4.2",
     "tailwindcss": "^4"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingfisher-code/riverbank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/kingfisher-code/riverbank/issues"
+  },
+  "homepage": "https://github.com/kingfisher-code/riverbank#readme"
 }
