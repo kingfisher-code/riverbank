@@ -10,7 +10,7 @@ const Header = () => {
     <div>
       <div
         id="header"
-        className='w-full h-screen bg-[url("/favy4.jpg")] bg-cover bg-center relative'
+        className='w-full h-screen bg-[url("/rb-n.jpg")] bg-cover bg-center relative'
       >
         <div className="w-100vw h-100vh   bg-white/60 bg-cover   backdrop-blur-[0px] absolute inset-0 left-5 top-5 bottom-5 right-5">
           <div>
