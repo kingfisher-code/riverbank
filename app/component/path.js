@@ -12,7 +12,7 @@ const Section = () => {
       <div className="flex place-content-between ">
         <div className="pl-2">
           <h2 className="font-bold text-[19px] md:text-[24px]font-ovo">
-            M23RB
+            M25RB
           </h2>
           <h4 className="font-ovo text-black/60">Riverbank media</h4>
         </div>

@@ -19,7 +19,7 @@ export default function Home() {
     setIsVisible(!isVisible);
   };
   return (
-    <div className="w-full items-center h-screen bg-[url('/favy4.jpg')] bg-center bg-cover md:bg-cover ">
+    <div className="w-full items-center h-screen bg-[url('/rb-m.jpg')] bg-center bg-cover md:bg-cover ">
       <div
         className=" w-full h-screen bg-black/84 backdrop-blur-[0px]  justify-items-center content-center px-3
       "
